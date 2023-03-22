@@ -15,21 +15,21 @@ class Solution {
             return false;
         }
 
-        HashMap<Character, Integer> num_freqS = new HashMap<>();
-        HashMap<Character, Integer> num_freqT = new HashMap<>();
+        HashMap<Character, Integer> numFreqS = new HashMap<>();
+        HashMap<Character, Integer> numFreqT = new HashMap<>();
 
         char[] arrayS = s.toCharArray();
         char[] arrayT = t.toCharArray();
 
         for (char x : arrayS) {
-            num_freqS.put(x, num_freqS.getOrDefault(x, 0) + 1);
+            numFreqS.put(x, numFreqS.getOrDefault(x, 0) + 1);
         }
 
         for (char x : arrayT) {
-            num_freqT.put(x, num_freqT.getOrDefault(x, 0) + 1);
+            numFreqT.put(x, numFreqT.getOrDefault(x, 0) + 1);
         }
 
-        return num_freqS.equals(num_freqT);
+        return numFreqS.equals(numFreqT);
     }
 }
 // @lc code=end
