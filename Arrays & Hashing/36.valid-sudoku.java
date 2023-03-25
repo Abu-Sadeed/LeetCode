@@ -9,7 +9,7 @@ import java.util.HashSet;
 // @lc code=start
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        HashSet<String> seen = new HashSet<String>();
+        HashSet<String> seen = new HashSet<>();
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 char current = board[i][j];
