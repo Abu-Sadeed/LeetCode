@@ -1,3 +1,11 @@
+# https://leetcode.com/problems/valid-palindrome/
+# Time O(N)
+# Space O(1)
+# Set two pointers i and j, from both ends of the string, and move them towards each other.
+# If the two characters are not the same, return False
+# If the two characters are the same, keep moving them towards each other
+# Return True at the end
+
 def is_palindrome(s):
     s = "".join(filter(str.isalnum, s))
     s = s.lower()
